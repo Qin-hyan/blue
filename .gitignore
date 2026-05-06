@@ -1,6 +1,5 @@
-# Ignore large CSV data files
+# Ignore large CSV data files (>100MB)
 data_with_*.csv
-*.csv
 
 # Ignore Python cache
 __pycache__/
