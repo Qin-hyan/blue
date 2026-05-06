@@ -1,0 +1,86 @@
+============================================================
+数据清理报告 - Data Cleaning Report
+============================================================
+
+原始数据: 67810 行 x 84 列
+清洗后数据: 67810 行 x 84 列
+
+============================================================
+第一部分: Price 处理
+============================================================
+  原始缺失值数量: 24,371 (约 35.9%)
+  IQR 异常值边界: [-139.00, 437.00]
+  截断的异常值数量: 2,937
+  处理后 price 范围: [7.00, 437.00]
+
+============================================================
+第二部分: 缺失值填充
+============================================================
+  bedrooms: 填充 8,902 个缺失值 (中位数=1.0)
+  beds: 填充 24,380 个缺失值 (中位数=1.0)
+  bathrooms: 填充 24,339 个缺失值 (中位数=1.0)
+  host_response_rate: 填充 22,078 个缺失值 (中位数=1.0)
+
+============================================================
+第三部分: 新增列
+============================================================
+  host_tenure_days: 基于参考日期 2025-09-18 计算
+  log_price: 对 price 进行自然对数变换
+  amenities_count: 从 amenities 字符串解析设施数量
+  name_length: 名称字符数
+  desc_length: 描述字符数
+
+============================================================
+第四部分: 共线性诊断
+============================================================
+  price <-> log_price: 相关系数 = 0.937
+
+============================================================
+第五部分: 缺失值汇总
+============================================================
+  calendar_updated: 67810 (100.0%)
+  license: 67810 (100.0%)
+  neighbourhood_group_cleansed: 67810 (100.0%)
+  neighborhood_overview: 39118 (57.7%)
+  neighbourhood: 39117 (57.7%)
+  host_neighbourhood: 35717 (52.7%)
+  host_about: 33076 (48.8%)
+  estimated_revenue_l365d: 24371 (35.9%)
+  price: 24371 (35.9%)
+  log_price: 24371 (35.9%)
+  host_response_time: 22078 (32.6%)
+  host_acceptance_rate: 19380 (28.6%)
+  review_scores_location: 16948 (25.0%)
+  review_scores_checkin: 16947 (25.0%)
+  review_scores_value: 16946 (25.0%)
+  review_scores_communication: 16931 (25.0%)
+  review_scores_accuracy: 16929 (25.0%)
+  review_scores_cleanliness: 16925 (25.0%)
+  review_scores_rating: 16920 (25.0%)
+  last_review: 16920 (25.0%)
+  first_review: 16920 (25.0%)
+  reviews_per_month: 16920 (25.0%)
+  host_location: 16685 (24.6%)
+  has_availability: 2997 (4.4%)
+  description: 1749 (2.6%)
+  desc_length: 1749 (2.6%)
+  host_is_superhost: 1224 (1.8%)
+  bathrooms_text: 122 (0.2%)
+  host_name: 28 (0.0%)
+  host_listings_count: 26 (0.0%)
+  host_since: 26 (0.0%)
+  host_thumbnail_url: 26 (0.0%)
+  host_picture_url: 26 (0.0%)
+  host_total_listings_count: 26 (0.0%)
+  host_verifications: 26 (0.0%)
+  host_has_profile_pic: 26 (0.0%)
+  host_identity_verified: 26 (0.0%)
+  picture_url: 5 (0.0%)
+  minimum_maximum_nights: 2 (0.0%)
+  minimum_minimum_nights: 2 (0.0%)
+  maximum_minimum_nights: 2 (0.0%)
+  maximum_maximum_nights: 2 (0.0%)
+
+============================================================
+报告结束
+============================================================
