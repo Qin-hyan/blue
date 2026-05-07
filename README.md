@@ -47,3 +47,24 @@ AI science
 - 总特征数：71
 - 总样本数：42,619
 - 输出文件：`G:\vs_code\RepoSpark\train-database\London Airbnb (5.0)\train_matrix_encoded.csv`
+
+London Airbnb 价格分析项目
+
+项目内容：
+
+四个实验分析：
+矿区 A：地段的鄙视链（Neighborhood Tier 分箱）
+矿区 B：黄金一公里（距离地铁站距离分析）
+矿区 C：洗衣机自由（设施影响分析）
+矿区 D：姜是老的辣（Host 房龄影响分析）
+
+核心文件：
+feature_engineering_step2.2.py - 特征工程脚本
+baseline_model_step2.2.py - Baseline 模型验证
+分析报告.md - 完整分析报告
+可视化图表：distance_vs_price.png, host_age_impact.png, neighborhood_tier_distribution.png, washer_impact.png
+GitHub 仓库： https://github.com/Qin-hyan/blue
+
+注意事项：
+大型数据文件（>100MB）已通过 .gitignore 排除，避免超过 GitHub 限制
+原始数据文件需要本地运行特征工程脚本生成
