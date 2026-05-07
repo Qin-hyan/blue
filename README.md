@@ -72,7 +72,6 @@ baseline_model_step2.2.py - Baseline 模型验证
 
 可视化图表：distance_vs_price.png, host_age_impact.png, neighborhood_tier_distribution.png, washer_impact.png
 
-GitHub 仓库： https://github.com/Qin-hyan/blue
 
 注意事项：
 
